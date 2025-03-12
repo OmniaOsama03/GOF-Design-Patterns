@@ -1,0 +1,36 @@
+Core Components
+1. Amplifier
+- Acts as the central control unit for audio.
+- Controls volume, sound mode (stereo or surround), and manages input sources like the StreamingPlayer and Tuner.
+
+2. Tuner
+- Represents a radio receiver.
+- Allows the user to set AM/FM modes and tune to specific radio frequencies.
+- Connects to the amplifier to play audio through the theater’s sound system.
+
+3. StreamingPlayer
+- Manages media playback, like movies or music from streaming services (so you can play, pause or stop).
+- Works with the amplifier to provide audio output, including surround or two-channel audio.
+- Connects to the Projector to display movies or videos on the screen.
+- Connects to the Amplifier to output sound through the theater’s speakers.
+
+4. Projector
+- Displays video content on a screen.
+- Can switch between TV mode and widescreen mode (16:9 aspect ratio for movies).
+- Connects to the StreamingPlayer to display video content.
+
+5. Screen
+- Represents the physical screen where the projector displays content.
+- Can be raised (up()) or lowered (down()) based on whether the theater is in use.
+
+6. TheaterLights
+- Controls the lighting in the room.
+- Can be turned on or off and dimmed to create the ideal ambiance for movie-watching.
+
+7. PopcornPopper
+This one's clear.
+
+HomeTheaterFacade Class
+- Acts as a facade to control all components of the home theater.
+Provides easy-to-use methods like watchMovie(), endMovie(), listenToRadio(), and endRadio() to control multiple components with a single call.
+
